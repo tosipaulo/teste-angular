@@ -1,0 +1,19 @@
+<div class="container">
+
+	<a href="/" class="btn btn-primary">voltar<a>
+
+</div>
+<hr>
+
+<div class="container">
+	
+	<ul ng-repeat="(key, value) in dolarCtrl.dolar">
+		<li>{{key}}
+		<ul>
+			<li>{{value.nome}}</li>
+			<li>{{value.valor}}</li>
+		</ul>
+		</li>
+	</ul>
+
+</div>
