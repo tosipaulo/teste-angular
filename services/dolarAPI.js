@@ -9,9 +9,10 @@
 
 	function dolarAPI($http, config, $q) {
 
-		/*var deferred = $q.defer();
+		
 
 		var _getAll = function() {
+			var deferred = $q.defer();
 			$http.get(config.baseUrl).then(function(response){
 
 				deferred.resolve(response);
@@ -24,6 +25,7 @@
 		}
 
 		var _getMoeda = function(moeda) {
+			var deferred = $q.defer();
 			$http.get(config.baseUrl + '?moedas='+moeda).then(function(response){
 				deferred.resolve(response);
 
@@ -32,15 +34,15 @@
 			})
 
 			return 	deferred.promise;
-		}*/
+		}
 
-		var _getAll = function() {
+		/*var _getAll = function() {
 			return $http.get(config.baseUrl)
 		}
 
 		var _getMoeda = function(moeda) {
 			return $http.get(config.baseUrl + '?moedas='+moeda)
-		}
+		}*/
 
 
 

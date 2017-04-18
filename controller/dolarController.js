@@ -14,7 +14,7 @@
  
 				dolarAPI.getAll().then(function(response){
 					vm.dolar = response.data.valores;
-					console.log("Dolar...");
+					console.log("Dolar >>> ", response);
 				}).catch(function(err){
 					console.log(err);
 				})
