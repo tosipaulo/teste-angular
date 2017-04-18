@@ -1,7 +1,7 @@
 (function(){
 
 	'use strict'
-
+ 
 	angular
 		.module('app')
 		.controller('dolarController', function($scope, dolarAPI){
@@ -13,7 +13,7 @@
 			var carregarDolar = function() {
  
 				dolarAPI.getAll().then(function(response){
-					vm.dolar = response.data.valores;
+					$scope.dolares = response.data.valores;
 				}).catch(function(err){
 					console.log(err);
 				})

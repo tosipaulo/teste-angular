@@ -1,6 +1,6 @@
 (function(){
 
-	'use strict'
+	'use strict' 
 
 	angular
 		.module('app')
@@ -15,7 +15,7 @@
 			var carregarMoeda = function() {
  
 				dolarAPI.getMoeda(moeda).then(function(response){
-					vm.dolar = response.data.valores;
+					$scope.dolares = response.data.valores;
 				}).catch(function(err){
 					console.log(err);
 				})
