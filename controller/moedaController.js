@@ -15,7 +15,8 @@
 			var carregarMoeda = function() {
  
 				dolarAPI.getMoeda(moeda).then(function(response){
-					$scope.dolares = response.data.valores;
+					vm.dolar = response.data.valores;
+					console.log("Moeda...");
 				}).catch(function(err){
 					console.log(err);
 				})

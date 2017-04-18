@@ -13,7 +13,8 @@
 			var carregarDolar = function() {
  
 				dolarAPI.getAll().then(function(response){
-					$scope.dolares = response.data.valores;
+					vm.dolar = response.data.valores;
+					console.log("Dolar...");
 				}).catch(function(err){
 					console.log(err);
 				})

@@ -17,11 +17,13 @@
 			})
 			.when('/todos', {
 				templateUrl : 'view/moeda.html',
-				controller: 'dolarController'
+				controller: 'dolarController',
+				controllerAs: 'dolarCtrl'
 			})
 			.when('/moedas/:moedas', {
 				templateUrl : 'view/moeda.html',
-				controller: 'moedaController'
+				controller: 'moedaController',
+				controllerAs: 'dolarCtrl'
 			})    
 
 
